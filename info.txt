@@ -1,0 +1,3 @@
+//NOTE: The template was made for quick starting new HTML5 projects.
+//NOTE: normalize.css ver 3.0.1 jquery 1.11.1
+//TODO: -
