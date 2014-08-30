@@ -1,14 +1,14 @@
 HTML5-project-template
 ======================
 
-The template for quick starting new HTML5 projects.
-It was created as a compilated light-version of famous HTML5 boilerplates for using in small projects (like HTML5 banners, richmedia ads, mobile ads, etc).
+The template for quick starting HTML5 projects.
+It was created as a light-version of famous HTML5 boilerplates for using in small projects (like HTML5 banners, richmedia ads, mobile ads, etc).
 
 Generally based on https://github.com/h5bp/html5-boilerplate and https://github.com/google/web-starter-kit
 
 ## How to use
 
-Just clone the git repo — `git clone https://github.com/xmalinov/HTML5-project-template.git`
+Just clone the git repo — `git clone https://github.com/xmalinov/HTML5-project-template`
 
 
 ## Features
