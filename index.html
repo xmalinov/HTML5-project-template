@@ -27,42 +27,28 @@
     <form action="process_form.php" class="form" method="post" novalidate="">
 
       <div id="code-field1" class="code-field">
-        <label for="field1">
-          Code1
-        </label>
-        <input type="text" name="code1" id="code1">
+        <label for="field1">Code1</label>
+        <input class="code-field-val" type="text" name="code1" id="code1" value="6zUIsIgL">
       </div>
-
 
       <div id="code-field2" class="code-field">
-        <label for="field2">
-          Code2
-        </label>
-        <input type="text" name="code2" id="code2">
+        <label for="field2">Code2</label>
+        <input class="code-field-val" type="text" name="code2" id="code2" value="rrbD9vyv">
       </div>
-
 
       <div id="code-field3" class="code-field">
-        <label for="field3">
-          Code3
-        </label>
-        <input type="text" name="code3" id="code3">
+        <label for="field3">Code3</label>
+        <input class="code-field-val" type="text" name="code3" id="code3" value="S6zTDVjw">
       </div>
-
 
       <div id="code-field4" class="code-field">
-        <label for="field4">
-          Code4
-        </label>
-        <input type="text" name="code4" id="code4">
+        <label for="field4">Code4</label>
+        <input class="code-field-val" type="text" name="code4" id="code4" value="9slzTGhY">
       </div>
 
-
       <div id="code-field5" class="code-field">
-        <label for="field5">
-          Code5
-        </label>
-        <input type="text" name="code5" id="code5">
+        <label for="field5">Code5</label>
+        <input class="code-field-val" type="text" name="code5" id="code5" value="9slzTGhY">
       </div>
 
       <br>
@@ -103,49 +89,19 @@
     </form>
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <br>The following div will be updated after the call:
+  <br>
+  <div id="mybox"></div>
+  <input id="sample-btn" type="button" value="Update">
+
+
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/main.js ">
+  </script>
   <script>
-    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   </script>
 
-  <script src="js/main.js"></script>
-
-  <script type="text/javascript">
-
-    function ajaxFunction() {
-      var ajaxRequest; // The variable that makes Ajax possible!
-
-      try {
-        // Opera 8.0+, Firefox, Safari
-        ajaxRequest = new XMLHttpRequest();
-      } catch (e) {
-        // Internet Explorer Browsers
-        try {
-          ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
-        } catch (e) {
-          try {
-            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
-          } catch (e) {
-            // Something went wrong
-            alert("Your browser broke!");
-            return false;
-          }
-        }
-      }
-      // Create a function that will receive data sent from the server
-      ajaxRequest.onreadystatechange = function () {
-        if (ajaxRequest.readyState == 4) {
-          var ajaxDisplay = document.getElementById('ajaxDiv');
-          ajaxDisplay.innerHTML = ajaxRequest.responseText;
-        }
-      }
-      var name = document.getElementById('name').value;
-      var location = document.getElementById('location').value;
-      var queryString = "?name=" + name + "&location=" + location;
-      ajaxRequest.open("POST", "some.php" + queryString, true);
-      ajaxRequest.send(null);
-    }
-  </script>
 </body>
 
 </html>
