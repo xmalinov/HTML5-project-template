@@ -1,20 +1,36 @@
 (function () {
   'use strict';
 
-  function getURLParameter(sParam) {
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) {
-      var sParameterName = sURLVariables[i].split('=');
-      if (sParameterName[0] == sParam) {
-        return sParameterName[1];
-      }
-    }
+  function getURLParameter(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+    var results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
   };
 
-  var item = getURLParameter('item');
-  console.log(item);
+  var currentItem = getURLParameter('item');
 
+  var discountedProducts = {
+    1: 3,
+    2: 4,
+    3: 2,
+    4: 5,
+    5: 1,
+    6: 5,
+    7: 4,
+    8: 3
+  };
+
+  for (var i = 0; i < discountedProducts[currentItem]; i++) {
+    $('#code' + (i + 1)).removeAttr('disabled');
+  };
+
+  /*
+  for (var i = 0; i < discountedProducts[currentItem]; i++) {
+    var codeFieldString = '<div id="code-field' + i + '" class="code-field"><label for="field' + i + '">Code' + i + ' </label><input class="code-field-val" type="text" name="code' + i + '" id="code' + i + '" value="6zUIsIgL"></div>';
+    $('#codes-section').append(codeFieldString);
+  };
+*/
   var codesArray = [];
 
   $('.code-field-val').each(function (index) {
