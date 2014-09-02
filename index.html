@@ -20,92 +20,36 @@
 
 <body>
 
-  <br>
-  <br>
+  <p>Hello world! This is HTML5 template.</p>
 
-  <div class="form-container">
-    <form action="process_form.php" class="form" method="post" novalidate="">
-
-      <div id="codes-section" class="codes-section">
-
-        <div id="code-field1" class="code-field">
-          <label for="field1">Code1</label>
-          <input class="code-field-val" type="text" name="code1" id="code1" value="" disabled>
-        </div>
-
-        <div id="code-field2" class="code-field">
-          <label for="field2">Code2</label>
-          <input class="code-field-val" type="text" name="code2" id="code2" value="" disabled>
-        </div>
-
-        <div id="code-field3" class="code-field">
-          <label for="field3">Code3</label>
-          <input class="code-field-val" type="text" name="code3" id="code3" value="" disabled>
-        </div>
-
-        <div id="code-field4" class="code-field">
-          <label for="field4">Code4</label>
-          <input class="code-field-val" type="text" name="code4" id="code4" value="" disabled>
-        </div>
-
-        <div id="code-field5" class="code-field">
-          <label for="field5">Code5</label>
-          <input class="code-field-val" type="text" name="code5" id="code5" value="" disabled>
-        </div>
-
-      </div>
-
-      <br>
-
-      <div id="check-field" class="check-field checkbox-group required">
-        <label for="check-field">
-          Agree to submit codes
-        </label>
-
-        <div class="option clearfix">
-          <input type="checkbox" name="check-box[]" id="checkbox" value="Option 1">
-          <span class="option-title">Check me</span>
-          <br>
-        </div>
-      </div>
-
-      <br>
-
-      <input type="text" id="name" value="..." />
-      <input type="text" id="location" value="..." />
-      <input type="button" onclick="ajaxFunction();" value="Get Code" />
-      <div id="ajaxDiv"></div>
-
-      <br>
-
-      <div id="promocode-block" class="field f_100">
-        <label for="field8">
-          Your code
-        </label>
-        <input type="text" name="promo-code" id="field8" required="required">
-      </div>
-
-      <br>
-
-      <input type="button" onclick="ajaxFunction2();" value="Buy" />
-      <div id="ajaxDiv2"></div>
-
-    </form>
-  </div>
-
-  <br>The following div will be updated after the call:
-  <br>
-  <div id="mybox"></div>
-  <input id="sample-btn" type="button" value="Update">
-
-
-  <script src="js/jquery.min.js"></script>
-
-  <script src="js/main.js ">
-  </script>
+  <!--CAN BE DELETED
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   </script>
+  -->
 
+  <script src="js/main.js"></script>
+
+  <!--CAN BE DELETED
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. c
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function () {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+  -->
 </body>
 
 </html>
