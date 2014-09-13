@@ -13,7 +13,7 @@ Just clone the git repo — `git clone https://github.com/xmalinov/HTML5-project
 
 ## Features
 
-* HTML5 ready. Use the new elements with confidence.
+* HTML5
 * Cross-browser compatible (Chrome, Firefox, IE9+, Opera, Safari).
 * Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
   normalizations and common bug fixes.
