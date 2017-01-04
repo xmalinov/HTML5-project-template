@@ -1,5 +1,6 @@
 **DEPRECATED**
 No more oldschool-style.
+Need to upgrade.
 
 HTML5-project-template
 ======================
