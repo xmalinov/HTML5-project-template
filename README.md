@@ -1,3 +1,5 @@
+**DEPRECATED**
+
 HTML5-project-template
 ======================
 
